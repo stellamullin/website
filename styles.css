@@ -2174,4 +2174,88 @@ button {
     transform: none;
   }
 
+}/* ============================================================
+   MAKE ALL PROJECT IMAGES SAME SIZE + SMALLER
+   ============================================================ */
+
+/* Make every project image area the same size */
+.project-visual,
+.project-card--feature .project-visual {
+  height: 170px;
+  min-height: 170px;
+  background: #fffdfa;
+}
+
+/* Keep the Daily Nexus card layout but don't let its image be huge */
+.project-card--feature {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.95fr);
+}
+
+/* Make all images fit fully inside their boxes and appear smaller */
+.project-visual__image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+
+  padding: 0.9rem;
+  background: #fffdfa;
+}
+
+/* Extra help for Isla Vista Live specifically */
+.project-card:last-child .project-visual__image {
+  object-fit: contain;
+  object-position: center;
+  padding: 0.8rem;
+}
+
+/* Make all project cards feel smaller overall */
+.project-card__content,
+.project-card--feature .project-card__content {
+  padding: 1rem;
+}
+
+.project-card h3,
+.project-card--feature h3 {
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.project-card__content > p {
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.project-card__meta {
+  font-size: 0.54rem;
+}
+
+/* Make spacing tighter */
+.project-grid {
+  gap: 0.8rem;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 680px) {
+  .project-visual,
+  .project-card--feature .project-visual {
+    height: 145px;
+    min-height: 145px;
+  }
+
+  .project-visual__image {
+    padding: 0.7rem;
+  }
+
+  .project-card__content,
+  .project-card--feature .project-card__content {
+    padding: 0.9rem;
+  }
 }
