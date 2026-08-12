@@ -33,6 +33,7 @@
   --typewriter:
     "Courier Prime",
     "Courier New",
+    Courier,
     monospace;
 
   --sans:
@@ -498,17 +499,21 @@ button {
 }
 
 
-/* TYPEWRITER FONT FOR HIGHLIGHTED HERO WORDS */
+/* TYPEWRITER FONT FOR HERO HIGHLIGHT */
 
 .hero__copy h1 em {
   color: var(--peach-deep);
 
-  font-family: var(--typewriter);
+  font-family:
+    "Courier Prime",
+    "Courier New",
+    Courier,
+    monospace !important;
 
-  font-style: normal;
+  font-style: normal !important;
   font-weight: 400;
 
-  letter-spacing: -0.055em;
+  letter-spacing: -0.04em;
 }
 
 
@@ -1359,17 +1364,21 @@ button {
 .about-card__main h2 em {
   color: var(--peach-deep);
 
-  font-family: var(--typewriter);
+  font-family:
+    "Courier Prime",
+    "Courier New",
+    Courier,
+    monospace !important;
 
-  font-style: normal;
+  font-style: normal !important;
   font-weight: 400;
 
-  letter-spacing: -0.055em;
+  letter-spacing: -0.04em;
 }
 
 
 /* ============================================================
-   ABOUT — TWO OVERLAPPING PHOTOS
+   ABOUT — TWO PHOTOS STACKED VERTICALLY
    ============================================================ */
 
 .about-intro-row {
@@ -1399,28 +1408,29 @@ button {
 }
 
 
-/* Slightly larger photo group */
+/* Photos stay on the left in one vertical column */
 
 .about-photo-stack {
-  position: relative;
-
   flex:
-    0 0 105px;
+    0 0 82px;
 
-  width: 105px;
-  height: 128px;
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.55rem;
+
+  width: 82px;
 
   margin-top: 0.15rem;
 }
 
 
-/* Both About photos */
-
 .about-photo {
-  position: absolute;
+  position: static;
 
-  width: 76px;
-  height: 94px;
+  width: 82px;
+  height: 98px;
 
   overflow: hidden;
 
@@ -1432,7 +1442,9 @@ button {
   background: var(--white);
 
   box-shadow:
-    0 8px 18px rgba(36, 49, 45, 0.11);
+    0 8px 18px rgba(36, 49, 45, 0.1);
+
+  transform: none;
 }
 
 
@@ -1448,25 +1460,11 @@ button {
 }
 
 
-.about-photo--one {
-  top: 0;
-  left: 0;
-
-  z-index: 2;
-
-  transform:
-    rotate(-3deg);
-}
-
-
+.about-photo--one,
 .about-photo--two {
-  right: 0;
-  bottom: 0;
+  position: static;
 
-  z-index: 1;
-
-  transform:
-    rotate(3deg);
+  transform: none;
 }
 
 
@@ -2114,16 +2112,17 @@ button {
 
 
   .about-photo-stack {
-    flex-basis: 82px;
+    flex-basis: 66px;
 
-    width: 82px;
-    height: 102px;
+    width: 66px;
+
+    gap: 0.45rem;
   }
 
 
   .about-photo {
-    width: 59px;
-    height: 74px;
+    width: 66px;
+    height: 80px;
 
     border-width: 3px;
 
