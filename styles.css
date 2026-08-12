@@ -213,9 +213,11 @@ button {
 
 .brand__mark {
   display: grid;
+
   place-items: center;
 
   width: 36px;
+
   aspect-ratio: 1;
 
   border-radius: 50%;
@@ -225,6 +227,7 @@ button {
 
   font-size: 0.67rem;
   font-weight: 600;
+
   letter-spacing: 0.04em;
 }
 
@@ -232,6 +235,7 @@ button {
 .brand__name {
   font-size: 0.9rem;
   font-weight: 600;
+
   letter-spacing: -0.02em;
 }
 
@@ -260,8 +264,7 @@ button {
 
   text-decoration: none;
 
-  transition:
-    color 180ms ease;
+  transition: color 180ms ease;
 }
 
 
@@ -282,8 +285,7 @@ button {
 
   transform: scaleX(0);
 
-  transition:
-    transform 180ms ease;
+  transition: transform 180ms ease;
 }
 
 
@@ -387,8 +389,7 @@ button {
 
   min-height: 44px;
 
-  padding:
-    0.72rem 1.1rem;
+  padding: 0.72rem 1.1rem;
 
   border-radius: 999px;
 
@@ -417,19 +418,10 @@ button {
 }
 
 
-.button--ghost {
-  border: 1px solid var(--line);
-
-  background:
-    rgba(255, 253, 250, 0.7);
-}
-
-
 .reveal {
   opacity: 0;
 
-  transform:
-    translateY(16px);
+  transform: translateY(16px);
 
   transition:
     opacity 620ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -440,8 +432,7 @@ button {
 .reveal.is-visible {
   opacity: 1;
 
-  transform:
-    translateY(0);
+  transform: translateY(0);
 }
 
 
@@ -456,8 +447,7 @@ button {
     minmax(0, 1.05fr)
     minmax(320px, 0.65fr);
 
-  gap:
-    clamp(2.5rem, 7vw, 6rem);
+  gap: clamp(2.5rem, 7vw, 6rem);
 
   align-items: center;
 
@@ -537,8 +527,7 @@ button {
   padding:
     0.45rem 0.72rem;
 
-  border:
-    1px solid var(--line);
+  border: 1px solid var(--line);
 
   border-radius: 999px;
 
@@ -563,7 +552,7 @@ button {
 
 
 /* ============================================================
-   HERO PHOTO CARD
+   GRADUATION PHOTO
    ============================================================ */
 
 .portrait-card {
@@ -584,8 +573,7 @@ button {
 
   box-shadow: var(--shadow);
 
-  transform:
-    rotate(1.2deg);
+  transform: rotate(1.2deg);
 }
 
 
@@ -602,8 +590,6 @@ button {
 }
 
 
-/* This makes your graduation photo fill the entire card */
-
 .portrait-card__image img {
   position: absolute;
 
@@ -616,11 +602,7 @@ button {
 
   object-fit: cover;
 
-  /*
-    Slightly favors the upper part of the photo so your
-    face is less likely to get cropped.
-  */
-  object-position: center 32%;
+  object-position: center 36%;
 }
 
 
@@ -642,20 +624,7 @@ button {
 
   gap: 0.2rem;
 
-  background:
-    radial-gradient(
-      circle at 72% 20%,
-      rgba(239, 181, 159, 0.95) 0 17%,
-      transparent 17.5%
-    ),
-
-    radial-gradient(
-      circle at 18% 78%,
-      rgba(239, 219, 146, 0.95) 0 20%,
-      transparent 20.5%
-    ),
-
-    var(--sage);
+  background: var(--sage);
 
   color: var(--ink);
 }
@@ -667,8 +636,6 @@ button {
   font-size: 6rem;
 
   line-height: 0.85;
-
-  letter-spacing: -0.06em;
 }
 
 
@@ -739,97 +706,7 @@ button {
 
   line-height: 1.08;
 
-  transform:
-    rotate(-4deg);
-}
-
-
-/* ============================================================
-   FOCUS CARDS
-   ============================================================ */
-
-.focus-strip {
-  padding-block:
-    0.5rem 3.5rem;
-}
-
-
-.focus-strip__grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(3, 1fr);
-
-  gap: 0.8rem;
-}
-
-
-.focus-card {
-  padding: 1.15rem;
-
-  border:
-    1px solid var(--line);
-
-  border-radius: 18px;
-
-  background:
-    rgba(255, 253, 250, 0.58);
-}
-
-
-.focus-card:nth-child(2) {
-  background:
-    color-mix(
-      in srgb,
-      var(--blue) 42%,
-      var(--white)
-    );
-}
-
-
-.focus-card:nth-child(3) {
-  background:
-    color-mix(
-      in srgb,
-      var(--sage) 46%,
-      var(--white)
-    );
-}
-
-
-.focus-card__number {
-  color: var(--peach-deep);
-
-  font-size: 0.62rem;
-
-  font-weight: 600;
-
-  letter-spacing: 0.08em;
-}
-
-
-.focus-card h2 {
-  margin:
-    0.9rem 0 0.3rem;
-
-  font-family: var(--display);
-
-  font-size: 1.55rem;
-
-  font-weight: 400;
-
-  line-height: 1;
-}
-
-
-.focus-card p {
-  margin: 0;
-
-  color: var(--ink-soft);
-
-  font-size: 0.8rem;
-
-  line-height: 1.45;
+  transform: rotate(-4deg);
 }
 
 
@@ -952,8 +829,6 @@ button {
 }
 
 
-/* One highlighted story per line */
-
 .highlighted-stories__grid {
   display: grid;
 
@@ -975,8 +850,6 @@ button {
   gap: 1rem;
 
   align-items: center;
-
-  min-height: 0;
 
   padding:
     0.78rem 0.9rem;
@@ -1001,8 +874,6 @@ button {
 
 
 .story-link:hover {
-  z-index: 2;
-
   background: var(--white);
 
   transform:
@@ -1062,7 +933,7 @@ button {
   grid-template-columns:
     repeat(2, minmax(0, 1fr));
 
-  gap: 0.95rem;
+  gap: 0.85rem;
 }
 
 
@@ -1072,7 +943,7 @@ button {
   border:
     1px solid var(--line);
 
-  border-radius: 21px;
+  border-radius: 20px;
 
   background: var(--cream);
 
@@ -1084,104 +955,119 @@ button {
 
 .project-card:hover {
   transform:
-    translateY(-4px);
+    translateY(-3px);
 
   box-shadow:
-    0 18px 45px rgba(49, 55, 47, 0.08);
+    0 16px 35px
+    rgba(49, 55, 47, 0.07);
 }
 
 
-/* Daily Nexus featured card */
+/* Daily Nexus remains full width */
 
 .project-card--feature {
   grid-column:
     1 / -1;
 
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 1fr)
-    minmax(300px, 0.85fr);
+  display: block;
 }
 
 
 /* ============================================================
-   PROJECT PHOTOS
+   PROJECT IMAGE AREAS
    ============================================================ */
 
-.project-visual {
+/*
+   IMPORTANT:
+
+   Every single project now has an image area
+   that is EXACTLY the same height.
+*/
+
+.project-visual,
+.project-card--feature .project-visual {
   position: relative;
 
-  min-height: 235px;
+  display: grid;
+
+  place-items: center;
+
+  width: 100%;
+
+  height: 160px;
+  min-height: 160px;
 
   overflow: hidden;
 
+  background:
+    color-mix(
+      in srgb,
+      var(--cream-deep) 55%,
+      var(--white)
+    );
+
   isolation: isolate;
-
-  background: var(--cream-deep);
 }
 
 
 /*
-  Daily Nexus is the featured card, so its photo
-  is a little taller.
-*/
+   THIS is what makes all five actual images
+   the SAME SIZE.
 
-.project-card--feature .project-visual {
-  min-height: 300px;
-}
-
-
-.project-visual--media {
-  background: var(--cream-deep);
-}
-
-
-/*
-  Every publication/project image completely fills its box.
-
-  object-fit: cover allows a little cropping, which is what
-  keeps all the different logo/image shapes looking consistent.
+   Every logo/poster sits inside a
+   190px by 120px frame.
 */
 
 .project-visual__image {
   position: absolute;
 
-  inset: 0;
+  top: 50%;
+  left: 50%;
 
-  z-index: 1;
+  width: 190px;
+  height: 120px;
 
-  width: 100%;
-  height: 100%;
+  max-width:
+    calc(100% - 2rem);
 
   object-fit: cover;
 
   object-position: center;
 
+  border-radius: 10px;
+
+  transform:
+    translate(-50%, -50%);
+
   transition:
-    transform 350ms ease;
+    transform 250ms ease;
 }
 
 
 /*
-  Very subtle image movement on hover.
+   Since object-fit is cover,
+   the odd white space around the Isla Vista
+   Live logo will be cropped instead of making
+   that logo look tiny.
 */
 
-.project-card:hover .project-visual__image {
+.project-card:hover
+.project-visual__image {
   transform:
-    scale(1.025);
+    translate(-50%, -50%)
+    scale(1.02);
 }
 
 
 /*
-  Number bubble stays above the image.
+   Same numbered circle on every card
 */
 
 .project-visual__index {
   position: absolute;
 
-  top: 0.8rem;
-  left: 0.8rem;
+  top: 0.65rem;
+  left: 0.65rem;
 
   z-index: 5;
 
@@ -1189,79 +1075,26 @@ button {
 
   place-items: center;
 
-  width: 29px;
+  width: 27px;
 
   aspect-ratio: 1;
 
   border:
-    1px solid rgba(255, 255, 255, 0.85);
+    1px solid rgba(255, 255, 255, 0.82);
 
   border-radius: 50%;
 
   background:
-    rgba(36, 49, 45, 0.62);
+    rgba(36, 49, 45, 0.7);
 
   color: var(--white);
 
-  font-size: 0.54rem;
+  font-size: 0.5rem;
 
   font-weight: 600;
 
   backdrop-filter:
-    blur(6px);
-}
-
-
-/* ============================================================
-   OPTIONAL INDIVIDUAL IMAGE POSITIONING
-   ============================================================ */
-
-/*
-  These let you tweak an individual logo later without
-  changing all the others.
-
-  The current defaults should work, but these classes are
-  here if one specific image looks too cropped.
-*/
-
-
-/* First card: Daily Nexus */
-
-.project-card:nth-child(1)
-.project-visual__image {
-  object-position: center;
-}
-
-
-/* Santa Barbara Independent */
-
-.project-card:nth-child(2)
-.project-visual__image {
-  object-position: center;
-}
-
-
-/* Concert for the Coast */
-
-.project-card:nth-child(3)
-.project-visual__image {
-  object-position: center;
-}
-
-
-/* Noozhawk */
-
-.project-card:nth-child(4)
-.project-visual__image {
-  object-position: center;
-}
-
-
-/* Isla Vista Live */
-
-.project-card:nth-child(5)
-.project-visual__image {
-  object-position: center;
+    blur(5px);
 }
 
 
@@ -1269,20 +1102,14 @@ button {
    PROJECT TEXT
    ============================================================ */
 
+.project-card__content,
+.project-card--feature
 .project-card__content {
   display: flex;
 
   flex-direction: column;
 
-  padding: 1.3rem;
-}
-
-
-.project-card--feature
-.project-card__content {
-  justify-content: center;
-
-  padding: 1.65rem;
+  padding: 1rem 1.1rem;
 }
 
 
@@ -1291,11 +1118,11 @@ button {
 
   justify-content: space-between;
 
-  gap: 0.75rem;
+  gap: 0.7rem;
 
   color: var(--ink-soft);
 
-  font-size: 0.58rem;
+  font-size: 0.54rem;
 
   font-weight: 600;
 
@@ -1305,14 +1132,15 @@ button {
 }
 
 
-.project-card h3 {
+.project-card h3,
+.project-card--feature h3 {
   margin:
-    0.75rem 0 0;
+    0.65rem 0 0;
 
   font-family: var(--display);
 
   font-size:
-    clamp(1.55rem, 2.3vw, 2rem);
+    clamp(1.45rem, 2vw, 1.85rem);
 
   font-weight: 400;
 
@@ -1324,23 +1152,17 @@ button {
 }
 
 
-.project-card--feature h3 {
-  font-size:
-    clamp(2rem, 3.2vw, 3rem);
-}
-
-
 .project-card__content > p {
-  max-width: 610px;
+  max-width: 650px;
 
   margin:
-    0.65rem 0 0;
+    0.55rem 0 0;
 
   color: var(--ink-soft);
 
-  font-size: 0.82rem;
+  font-size: 0.78rem;
 
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
 
@@ -1351,7 +1173,7 @@ button {
 
   gap: 0.8rem;
 
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 
@@ -1363,12 +1185,12 @@ button {
 
   gap: 0.35rem;
 
-  padding-bottom: 0.15rem;
+  padding-bottom: 0.12rem;
 
   border-bottom:
     1px solid currentColor;
 
-  font-size: 0.75rem;
+  font-size: 0.72rem;
 
   font-weight: 600;
 
@@ -1489,7 +1311,7 @@ button {
   overflow: hidden;
 
   border:
-    1px solid rgba(36,49,45,0.1);
+    1px solid rgba(36, 49, 45, 0.1);
 
   border-radius: 18px;
 
@@ -1503,7 +1325,7 @@ button {
     1rem 1.1rem;
 
   border-bottom:
-    1px solid rgba(36,49,45,0.1);
+    1px solid rgba(36, 49, 45, 0.1);
 }
 
 
@@ -1541,7 +1363,7 @@ button {
 
 
 /* ============================================================
-   CONTACT — COMPACT VERSION
+   SMALL LET'S CONNECT BOX
    ============================================================ */
 
 .contact-section {
@@ -1564,7 +1386,7 @@ button {
   margin-inline: auto;
 
   padding:
-    1.15rem 1.4rem;
+    1.1rem 1.4rem;
 
   border-radius: 18px;
 
@@ -1574,16 +1396,6 @@ button {
 
 .contact-card__copy {
   flex-shrink: 0;
-}
-
-
-.contact-card__copy .eyebrow {
-  color:
-    color-mix(
-      in srgb,
-      var(--ink) 72%,
-      transparent
-    );
 }
 
 
@@ -1607,7 +1419,7 @@ button {
 
   font-family: var(--display);
 
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 
   line-height: 1;
 
@@ -1723,7 +1535,8 @@ button {
   .site-nav a {
     display: block;
 
-    padding: 0.85rem 0;
+    padding:
+      0.85rem 0;
 
     border-bottom:
       1px solid var(--line);
@@ -1732,7 +1545,8 @@ button {
   }
 
 
-  .site-nav li:last-child a {
+  .site-nav
+  li:last-child a {
     border-bottom: 0;
   }
 
@@ -1782,25 +1596,6 @@ button {
     border-radius: 2px;
 
     background: var(--ink);
-
-    transition:
-      transform 180ms ease;
-  }
-
-
-  .menu-toggle[aria-expanded="true"]
-  span:nth-of-type(2) {
-    transform:
-      translateY(3.25px)
-      rotate(45deg);
-  }
-
-
-  .menu-toggle[aria-expanded="true"]
-  span:nth-of-type(3) {
-    transform:
-      translateY(-3.25px)
-      rotate(-45deg);
   }
 
 
@@ -1835,17 +1630,6 @@ button {
 
   .section-heading > p {
     justify-self: start;
-  }
-
-
-  .project-card--feature {
-    display: block;
-  }
-
-
-  .project-card--feature
-  .project-visual {
-    min-height: 270px;
   }
 
 
@@ -1924,7 +1708,8 @@ button {
 
 
   .portrait-card__image img {
-    object-position: center 30%;
+    object-position:
+      center 34%;
   }
 
 
@@ -1935,7 +1720,8 @@ button {
   }
 
 
-  .portrait-card__caption span:last-child {
+  .portrait-card__caption
+  span:last-child {
     text-align: left;
   }
 
@@ -1952,18 +1738,6 @@ button {
     max-width: 125px;
 
     font-size: 0.9rem;
-  }
-
-
-  .focus-strip__grid {
-    grid-template-columns: 1fr;
-
-    gap: 0.6rem;
-  }
-
-
-  .focus-card {
-    padding: 1rem;
   }
 
 
@@ -2019,7 +1793,6 @@ button {
 
   .story-link__arrow {
     grid-column: 2;
-
     grid-row: 2;
   }
 
@@ -2036,33 +1809,52 @@ button {
   }
 
 
+  /*
+     Same small photo area on mobile.
+  */
+
   .project-visual,
   .project-card--feature
   .project-visual {
-    min-height: 210px;
+    height: 145px;
+    min-height: 145px;
+  }
+
+
+  /*
+     Every image remains the same exact size.
+  */
+
+  .project-visual__image {
+    width: 165px;
+    height: 105px;
+
+    max-width:
+      calc(100% - 2rem);
   }
 
 
   .project-card__content,
   .project-card--feature
   .project-card__content {
-    padding: 1.1rem;
+    padding:
+      0.95rem;
   }
 
 
   .project-card h3,
   .project-card--feature h3 {
     font-size:
-      clamp(1.6rem, 8vw, 2.2rem);
+      clamp(1.45rem, 7vw, 1.9rem);
   }
 
 
   .project-card__meta {
     flex-direction: column;
 
-    gap: 0.2rem;
-
     align-items: flex-start;
+
+    gap: 0.15rem;
   }
 
 
@@ -2087,21 +1879,19 @@ button {
   }
 
 
-  /* Compact contact */
+  /* Contact */
 
   .contact-card {
     flex-direction: column;
 
     align-items: flex-start;
 
-    gap: 0.8rem;
+    gap: 0.75rem;
 
     max-width: none;
 
     padding:
       1rem 1.15rem;
-
-    border-radius: 16px;
   }
 
 
@@ -2174,88 +1964,4 @@ button {
     transform: none;
   }
 
-}/* ============================================================
-   MAKE ALL PROJECT IMAGES SAME SIZE + SMALLER
-   ============================================================ */
-
-/* Make every project image area the same size */
-.project-visual,
-.project-card--feature .project-visual {
-  height: 170px;
-  min-height: 170px;
-  background: #fffdfa;
-}
-
-/* Keep the Daily Nexus card layout but don't let its image be huge */
-.project-card--feature {
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.95fr);
-}
-
-/* Make all images fit fully inside their boxes and appear smaller */
-.project-visual__image {
-  position: absolute;
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-  object-position: center;
-
-  padding: 0.9rem;
-  background: #fffdfa;
-}
-
-/* Extra help for Isla Vista Live specifically */
-.project-card:last-child .project-visual__image {
-  object-fit: contain;
-  object-position: center;
-  padding: 0.8rem;
-}
-
-/* Make all project cards feel smaller overall */
-.project-card__content,
-.project-card--feature .project-card__content {
-  padding: 1rem;
-}
-
-.project-card h3,
-.project-card--feature h3 {
-  font-size: clamp(1.35rem, 2vw, 1.8rem);
-}
-
-.project-card__content > p {
-  font-size: 0.78rem;
-  line-height: 1.4;
-}
-
-.project-card__meta {
-  font-size: 0.54rem;
-}
-
-/* Make spacing tighter */
-.project-grid {
-  gap: 0.8rem;
-}
-
-
-/* ============================================================
-   MOBILE
-   ============================================================ */
-
-@media (max-width: 680px) {
-  .project-visual,
-  .project-card--feature .project-visual {
-    height: 145px;
-    min-height: 145px;
-  }
-
-  .project-visual__image {
-    padding: 0.7rem;
-  }
-
-  .project-card__content,
-  .project-card--feature .project-card__content {
-    padding: 0.9rem;
-  }
 }
