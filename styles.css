@@ -30,6 +30,11 @@
   --display:
     "Instrument Serif", Georgia, serif;
 
+  --typewriter:
+    "Courier Prime",
+    "Courier New",
+    monospace;
+
   --sans:
     "DM Sans",
     system-ui,
@@ -314,7 +319,8 @@ button {
 
   gap: 0.4rem;
 
-  padding: 0.62rem 0.9rem;
+  padding:
+    0.62rem 0.9rem;
 
   border:
     1px solid var(--line);
@@ -335,7 +341,8 @@ button {
 
 
 .nav-cta:hover {
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
 
   border-color:
     rgba(36, 49, 45, 0.28);
@@ -412,7 +419,8 @@ button {
 
 
 .button:hover {
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
 }
 
 
@@ -490,10 +498,17 @@ button {
 }
 
 
+/* TYPEWRITER FONT FOR HIGHLIGHTED HERO WORDS */
+
 .hero__copy h1 em {
   color: var(--peach-deep);
 
+  font-family: var(--typewriter);
+
+  font-style: normal;
   font-weight: 400;
+
+  letter-spacing: -0.055em;
 }
 
 
@@ -1339,10 +1354,17 @@ button {
 }
 
 
+/* TYPEWRITER FONT FOR "BEHIND" */
+
 .about-card__main h2 em {
   color: var(--peach-deep);
 
+  font-family: var(--typewriter);
+
+  font-style: normal;
   font-weight: 400;
+
+  letter-spacing: -0.055em;
 }
 
 
@@ -1376,12 +1398,6 @@ button {
   max-width: 700px;
 }
 
-
-/*
-   This entire photo group stays small so it sits
-   neatly to the left of both the headline and the
-   "Hello, I'm Stella..." sentence.
-*/
 
 .about-photo-stack {
   position: relative;
@@ -2041,7 +2057,7 @@ button {
   }
 
 
-  /* Daily Nexus roles stack */
+  /* Daily Nexus roles */
 
   .daily-nexus-roles {
     grid-template-columns: 1fr;
