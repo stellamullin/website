@@ -138,6 +138,7 @@ button {
 
 .skip-link {
   position: fixed;
+
   top: 12px;
   left: 12px;
 
@@ -153,6 +154,7 @@ button {
   color: var(--white);
 
   font-size: 0.8rem;
+
   text-decoration: none;
 }
 
@@ -264,7 +266,8 @@ button {
 
   text-decoration: none;
 
-  transition: color 180ms ease;
+  transition:
+    color 180ms ease;
 }
 
 
@@ -285,7 +288,8 @@ button {
 
   transform: scaleX(0);
 
-  transition: transform 180ms ease;
+  transition:
+    transform 180ms ease;
 }
 
 
@@ -312,7 +316,9 @@ button {
 
   padding: 0.62rem 0.9rem;
 
-  border: 1px solid var(--line);
+  border:
+    1px solid var(--line);
+
   border-radius: 999px;
 
   background: var(--white);
@@ -422,7 +428,8 @@ button {
 .reveal {
   opacity: 0;
 
-  transform: translateY(16px);
+  transform:
+    translateY(16px);
 
   transition:
     opacity 620ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -433,7 +440,8 @@ button {
 .reveal.is-visible {
   opacity: 1;
 
-  transform: translateY(0);
+  transform:
+    translateY(0);
 }
 
 
@@ -576,7 +584,8 @@ button {
 
   box-shadow: var(--shadow);
 
-  transform: rotate(1.2deg);
+  transform:
+    rotate(1.2deg);
 }
 
 
@@ -605,7 +614,8 @@ button {
 
   object-fit: cover;
 
-  object-position: center 36%;
+  object-position:
+    center 36%;
 }
 
 
@@ -709,7 +719,8 @@ button {
 
   line-height: 1.08;
 
-  transform: rotate(-4deg);
+  transform:
+    rotate(-4deg);
 }
 
 
@@ -771,7 +782,7 @@ button {
 
 
 /* ============================================================
-   HIGHLIGHTED STORIES
+   SELECTED CREATIVITY
    ============================================================ */
 
 .highlighted-stories {
@@ -965,8 +976,6 @@ button {
 }
 
 
-/* Daily Nexus remains full width */
-
 .project-card--feature {
   grid-column:
     1 / -1;
@@ -976,7 +985,7 @@ button {
 
 
 /* ============================================================
-   PROJECT IMAGE AREAS
+   PROJECT IMAGES
    ============================================================ */
 
 .project-visual,
@@ -1004,10 +1013,6 @@ button {
   isolation: isolate;
 }
 
-
-/*
-   All five project images use the exact same frame size.
-*/
 
 .project-visual__image {
   position: absolute;
@@ -1069,7 +1074,6 @@ button {
   color: var(--white);
 
   font-size: 0.5rem;
-
   font-weight: 600;
 
   backdrop-filter:
@@ -1343,49 +1347,72 @@ button {
 
 
 /* ============================================================
-   ABOUT PHOTO + HEADLINE
+   ABOUT — TWO SMALL OVERLAPPING PHOTOS
    ============================================================ */
 
-.about-title-row {
+.about-intro-row {
   display: flex;
 
-  align-items: center;
+  align-items: flex-start;
 
-  gap: 1.4rem;
+  gap: 1rem;
 
   margin:
-    0.65rem 0 1.1rem;
+    0.65rem 0 1.2rem;
 }
 
 
-.about-title-row h2 {
-  margin: 0;
-
+.about-intro-text {
   flex: 1;
+
+  min-width: 0;
+}
+
+
+.about-intro-text h2 {
+  margin:
+    0 0 0.65rem;
+
+  max-width: 700px;
+}
+
+
+/*
+   This entire photo group stays small so it sits
+   neatly to the left of both the headline and the
+   "Hello, I'm Stella..." sentence.
+*/
+
+.about-photo-stack {
+  position: relative;
+
+  flex:
+    0 0 82px;
+
+  width: 82px;
+  height: 104px;
+
+  margin-top: 0.2rem;
 }
 
 
 .about-photo {
-  flex:
-    0 0 auto;
+  position: absolute;
 
-  width: 105px;
-  height: 125px;
+  width: 56px;
+  height: 70px;
 
   overflow: hidden;
 
   border:
-    7px solid rgba(255, 253, 250, 0.75);
+    4px solid rgba(255, 253, 250, 0.9);
 
-  border-radius: 16px;
+  border-radius: 10px;
 
   background: var(--white);
 
   box-shadow:
-    0 10px 24px rgba(36, 49, 45, 0.08);
-
-  transform:
-    rotate(-2deg);
+    0 7px 16px rgba(36, 49, 45, 0.1);
 }
 
 
@@ -1395,8 +1422,29 @@ button {
 
   object-fit: cover;
 
-  object-position:
-    center 30%;
+  object-position: center;
+}
+
+
+.about-photo--one {
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+
+  transform:
+    rotate(-3deg);
+}
+
+
+.about-photo--two {
+  right: 0;
+  bottom: 0;
+
+  z-index: 1;
+
+  transform:
+    rotate(3deg);
 }
 
 
@@ -1897,7 +1945,7 @@ button {
   }
 
 
-  /* Highlighted stories */
+  /* Selected creativity */
 
   .highlighted-stories {
     padding: 1rem;
@@ -2034,24 +2082,35 @@ button {
 
   .about-card__main h2 {
     font-size:
-      clamp(2.5rem, 11vw, 3.8rem);
+      clamp(2.35rem, 10vw, 3.5rem);
   }
 
 
-  .about-title-row {
-    align-items: flex-start;
+  .about-intro-row {
+    gap: 0.75rem;
+  }
 
-    gap: 1rem;
+
+  .about-photo-stack {
+    flex-basis: 67px;
+
+    width: 67px;
+    height: 86px;
   }
 
 
   .about-photo {
-    width: 78px;
-    height: 96px;
+    width: 46px;
+    height: 58px;
 
-    border-width: 5px;
+    border-width: 3px;
 
-    border-radius: 13px;
+    border-radius: 8px;
+  }
+
+
+  .about-card__lead {
+    font-size: 0.9rem;
   }
 
 
