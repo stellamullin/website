@@ -3,336 +3,682 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="John Hagedorn — computer engineer building thoughtful software, AI systems, infrastructure, and embedded products.">
-  <meta name="theme-color" content="#f8f5ef">
 
-  <title>John Hagedorn — Engineer & Builder</title>
+  <meta
+    name="description"
+    content="Stella Mullin — computer engineer, software builder, and systems thinker."
+  >
+
+  <meta name="theme-color" content="#f7f3eb">
+
+  <title>Stella Mullin — Engineer & Builder</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
+
   <a class="skip-link" href="#main-content">Skip to content</a>
 
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="#home" aria-label="John Hagedorn home">
-        <span class="brand__mark">JH</span>
-        <span class="brand__name">John Hagedorn</span>
+    <div class="page-shell header-inner">
+
+      <a class="site-logo" href="#home" aria-label="Stella Mullin home">
+        Stella Mullin
       </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-        <span class="sr-only">Toggle navigation</span>
-        <span></span>
-        <span></span>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
       </button>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <ul id="site-menu">
-          <li><a class="is-active" href="#home">Home</a></li>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a class="is-active" href="#home">Home</a>
+        <a href="#projects">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <a class="nav-cta" href="mailto:johnhagedorncs@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
+
   <main id="main-content">
-    <section id="home" class="hero section-shell" data-section>
-      <div class="hero__copy reveal">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Computer Engineering · UC Santa Barbara</p>
-        <h1>I build thoughtful technology that feels <em>clear, useful, and human.</em></h1>
-        <p class="hero__intro">
-          I’m John — a computer engineering student working across software, AI,
-          infrastructure, and embedded systems. I like taking ambitious ideas and
-          turning them into products people can actually understand and use.
+
+    <!-- HERO -->
+    <section
+      id="home"
+      class="hero page-shell"
+      data-section
+    >
+
+      <div class="hero-copy reveal">
+
+        <p class="eyebrow">Hi, I'm Stella.</p>
+
+        <h1>
+          I build thoughtful technology that feels
+          <em>clear, useful, and human.</em>
+        </h1>
+
+        <p class="hero-description">
+          I'm a computer engineering student working across software,
+          artificial intelligence, infrastructure, and embedded systems.
+          I like turning complicated ideas into things people can actually use.
         </p>
 
-        <div class="hero__actions">
-          <a class="button button--primary" href="#projects">See my work <span aria-hidden="true">↓</span></a>
-          <a class="button button--ghost" href="https://github.com/johnhagedorncs">GitHub <span aria-hidden="true">↗</span></a>
+        <div class="hero-actions">
+
+          <a class="button button--primary" href="#projects">
+            See my work
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <a
+            class="button button--secondary"
+            href="https://github.com/johnhagedorncs"
+          >
+            GitHub
+            <span aria-hidden="true">↗</span>
+          </a>
+
         </div>
 
-        <div class="hero__tags" aria-label="Areas of focus">
-          <span>Software</span>
-          <span>AI systems</span>
-          <span>Infrastructure</span>
-          <span>Embedded</span>
-        </div>
       </div>
 
-      <div class="hero__visual reveal">
+
+      <div class="hero-visual reveal">
+
         <div class="portrait-card">
+
           <div class="portrait-card__image">
-            <div class="portrait-fallback" aria-hidden="true">
-              <span>JH</span>
-              <small>Engineer & builder</small>
+
+            <div class="portrait-placeholder" aria-hidden="true">
+              <span>SM</span>
             </div>
-            <img src="profile.jpg" alt="Portrait of John Hagedorn" width="900" height="1100">
+
+            <img
+              src="profile.jpg"
+              alt="Portrait of Stella Mullin"
+              width="900"
+              height="1100"
+            >
+
           </div>
+
           <div class="portrait-card__caption">
             <span>Based in California</span>
-            <span class="portrait-card__spark">✦</span>
-            <span>Building across disciplines</span>
+            <span>Computer Engineering</span>
           </div>
+
         </div>
-        <div class="hero-note" aria-hidden="true">Making complex things feel simple.</div>
+
+        <div class="hero-note">
+          <span class="hero-note__icon">✦</span>
+          <p>
+            Interested in building technology that solves
+            real problems without making life more complicated.
+          </p>
+        </div>
+
       </div>
+
     </section>
 
-    <section class="focus-strip" aria-label="What I work on">
-      <div class="section-shell focus-strip__grid">
-        <article class="focus-card reveal">
-          <span class="focus-card__number">01</span>
-          <h2>Software</h2>
-          <p>Full-stack products, automation, and reliable production systems.</p>
-        </article>
-        <article class="focus-card reveal">
-          <span class="focus-card__number">02</span>
-          <h2>Artificial Intelligence</h2>
-          <p>Agent workflows, model evaluation, computer vision, and applied ML.</p>
-        </article>
-        <article class="focus-card reveal">
-          <span class="focus-card__number">03</span>
-          <h2>Computer Engineering</h2>
-          <p>Embedded software, architecture, operating systems, and hardware-aware design.</p>
-        </article>
+
+    <!-- INTRO STRIP -->
+    <section class="intro-strip">
+
+      <div class="page-shell intro-strip__inner">
+
+        <p>Software Engineering</p>
+        <span>✦</span>
+
+        <p>Artificial Intelligence</p>
+        <span>✦</span>
+
+        <p>Computer Engineering</p>
+        <span>✦</span>
+
+        <p>Infrastructure</p>
+
       </div>
+
     </section>
 
-    <section id="projects" class="projects-section" data-section>
-      <div class="section-shell">
-        <header class="section-heading reveal">
+
+    <!-- PROJECTS -->
+    <section
+      id="projects"
+      class="projects-section"
+      data-section
+    >
+
+      <div class="page-shell">
+
+        <header class="section-intro reveal">
+
           <div>
             <p class="eyebrow">Selected work</p>
-            <h2>A few things I’ve built.</h2>
+            <h2>A few things I've built.</h2>
           </div>
-          <p>
-            Projects spanning mobile products, multi-agent workflows, observability,
-            financial tooling, and embedded gameplay.
+
+          <p class="section-intro__copy">
+            Projects spanning mobile products, artificial intelligence,
+            full-stack development, observability, and embedded systems.
           </p>
+
         </header>
 
-        <div class="project-grid">
-          <article class="project-card project-card--feature reveal">
-            <div class="project-visual project-visual--golfr" aria-hidden="true">
-              <span class="project-visual__index">01</span>
-              <div class="golf-hole"></div>
-              <div class="golf-ball"></div>
-              <span class="project-visual__word">GOLFR</span>
-            </div>
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span>Mobile · SwiftUI</span>
-                <span>Social product</span>
+
+        <div class="project-list">
+
+          <!-- GOLFR -->
+          <article class="project-card project-card--featured reveal">
+
+            <div class="project-visual project-visual--golfr">
+
+              <span class="project-number">01</span>
+
+              <div class="project-visual__content">
+                <span class="project-visual__word">GOLFR</span>
+                <span class="project-visual__tag">
+                  Social golf, redesigned.
+                </span>
               </div>
-              <h3>Golfr turns the scorecard into a social product.</h3>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>Mobile</span>
+                <span>SwiftUI</span>
+              </div>
+
+              <h3>
+                Turning the scorecard into a social product.
+              </h3>
+
               <p>
-                An iOS golf application combining round tracking, player profiles,
-                rankings, analytics, achievements, and social discovery.
+                An iOS golf application combining round tracking,
+                player profiles, rankings, analytics, achievements,
+                and social discovery.
               </p>
-              <div class="project-card__links">
-                <a href="https://github.com/johnhagedorncs/Golfr">View source <span aria-hidden="true">↗</span></a>
+
+              <div class="project-links">
+
+                <a href="https://github.com/johnhagedorncs/Golfr">
+                  View project
+                  <span aria-hidden="true">↗</span>
+                </a>
+
               </div>
+
             </div>
+
           </article>
 
+
+          <!-- LINKR AI -->
           <article class="project-card reveal">
-            <div class="project-visual project-visual--linkr" aria-hidden="true">
-              <span class="project-visual__index">02</span>
-              <div class="linkr-node linkr-node--one"></div>
-              <div class="linkr-node linkr-node--two"></div>
-              <div class="linkr-node linkr-node--three"></div>
+
+            <div class="project-visual project-visual--linkr">
+
+              <span class="project-number">02</span>
+
+              <div class="orbit orbit--one"></div>
+              <div class="orbit orbit--two"></div>
+
               <span class="project-visual__word">LINKR</span>
+
             </div>
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span>Agents · Healthcare</span>
-                <span>AI workflow</span>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>AI Agents</span>
+                <span>Healthcare</span>
               </div>
-              <h3>LinkrAI coordinates referral, scheduling, and messaging agents.</h3>
+
+              <h3>
+                Coordinating referral, scheduling, and messaging agents.
+              </h3>
+
               <p>
-                A multi-agent healthcare workflow using A2A and Google ADK to move
-                a patient referral through scheduling and SMS communication.
+                A multi-agent healthcare workflow using A2A and Google ADK
+                to move a patient referral through scheduling and SMS
+                communication.
               </p>
-              <div class="project-card__links">
-                <a href="https://linkrai-johnhagedorn.vercel.app">Open app <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/johnhagedorncs/LinkrAI/tree/main">Source <span aria-hidden="true">↗</span></a>
+
+              <div class="project-links">
+
+                <a href="https://linkrai-johnhagedorn.vercel.app">
+                  Open app
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a href="https://github.com/johnhagedorncs/LinkrAI/tree/main">
+                  Source
+                  <span aria-hidden="true">↗</span>
+                </a>
+
               </div>
+
             </div>
+
           </article>
 
+
+          <!-- PAID -->
           <article class="project-card reveal">
-            <div class="project-visual project-visual--paid" aria-hidden="true">
-              <span class="project-visual__index">03</span>
+
+            <div class="project-visual project-visual--paid">
+
+              <span class="project-number">03</span>
+
               <div class="receipt">
-                <span>PAID</span>
-                <i></i><i></i><i></i>
-                <strong>$1,250</strong>
+
+                <span class="receipt__label">
+                  PAYMENT
+                </span>
+
+                <strong>$1,250.00</strong>
+
+                <span class="receipt__line"></span>
+                <span class="receipt__line"></span>
+                <span class="receipt__line"></span>
+
               </div>
+
+              <span class="project-visual__word">PAID</span>
+
             </div>
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span>Full stack · Fintech</span>
-                <span>Web app</span>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>Full Stack</span>
+                <span>Fintech</span>
               </div>
-              <h3>Paid makes informal debts visible and accountable.</h3>
+
+              <h3>
+                Making informal debts visible and accountable.
+              </h3>
+
               <p>
-                A real-time debt tracking application built with Next.js, TypeScript,
-                Firebase authentication, Firestore, and payment links.
+                A real-time debt tracking application built with Next.js,
+                TypeScript, Firebase authentication, Firestore, and
+                payment links.
               </p>
-              <div class="project-card__links">
-                <a href="https://paid-app.vercel.app">Open app <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/benjaminsoo/Paid-App">Source <span aria-hidden="true">↗</span></a>
+
+              <div class="project-links">
+
+                <a href="https://paid-app.vercel.app">
+                  Open app
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a href="https://github.com/benjaminsoo/Paid-App">
+                  Source
+                  <span aria-hidden="true">↗</span>
+                </a>
+
               </div>
+
             </div>
+
           </article>
 
+
+          <!-- SIGNAL -->
           <article class="project-card reveal">
-            <div class="project-visual project-visual--signal" aria-hidden="true">
-              <span class="project-visual__index">04</span>
-              <svg viewBox="0 0 500 220" role="presentation">
-                <path d="M0 170 C70 170 53 46 126 46 S175 171 251 171 298 78 364 78 407 29 500 29"/>
-                <path d="M0 148 C68 148 65 112 122 112 S180 196 245 196 308 106 366 106 429 143 500 143"/>
+
+            <div class="project-visual project-visual--signal">
+
+              <span class="project-number">04</span>
+
+              <svg
+                viewBox="0 0 500 220"
+                role="presentation"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M0 180 C70 180 52 42 125 42
+                  S174 173 250 173
+                  298 76 364 76
+                  407 22 500 22"
+                />
+
+                <path
+                  d="M0 155 C68 155 65 116 122 116
+                  S180 202 245 202
+                  308 107 366 107
+                  429 148 500 148"
+                />
+
               </svg>
+
               <span class="project-visual__word">SIGNAL</span>
+
             </div>
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span>SRE · AWS</span>
-                <span>Observability</span>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>SRE</span>
+                <span>AWS</span>
               </div>
-              <h3>An observability pipeline that turns logs into action.</h3>
+
+              <h3>
+                Turning system logs into something actionable.
+              </h3>
+
               <p>
-                CloudWatch collection, Lambda-based classification, SNS alerts,
-                and Prometheus/Grafana dashboards assembled as an end-to-end SRE system.
+                CloudWatch collection, Lambda-based classification,
+                SNS alerts, and Prometheus/Grafana dashboards assembled
+                as an end-to-end observability system.
               </p>
-              <div class="project-card__links">
-                <a href="https://www.youtube.com/watch?v=niR4Ux3BeFM">Watch demo <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/johnhagedorncs/SRE-Monitoring-Application">Source <span aria-hidden="true">↗</span></a>
+
+              <div class="project-links">
+
+                <a href="https://www.youtube.com/watch?v=niR4Ux3BeFM">
+                  Watch demo
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a href="https://github.com/johnhagedorncs/SRE-Monitoring-Application">
+                  Source
+                  <span aria-hidden="true">↗</span>
+                </a>
+
               </div>
+
             </div>
+
           </article>
 
+
+          <!-- SNAKE -->
           <article class="project-card project-card--wide reveal">
-            <div class="project-visual project-visual--snake" aria-hidden="true">
-              <span class="project-visual__index">05</span>
-              <div class="snake-grid">
-                <i></i><i></i><i></i><i></i><i></i>
-                <i></i><i></i><i></i><i></i><i></i>
-                <i></i><i></i><i></i><i></i><i></i>
+
+            <div class="project-visual project-visual--snake">
+
+              <span class="project-number">05</span>
+
+              <div class="snake-grid" aria-hidden="true">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
               </div>
-              <span class="project-visual__word">SNAKE</span>
+
+              <span class="project-visual__word">
+                SNAKE
+              </span>
+
             </div>
-            <div class="project-card__content">
-              <div class="project-card__meta">
-                <span>Embedded · C++</span>
-                <span>Hardware-aware</span>
+
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>Embedded</span>
+                <span>C++</span>
               </div>
-              <h3>A familiar arcade loop, rebuilt around custom rules and hardware.</h3>
+
+              <h3>
+                A familiar arcade game, rebuilt around custom rules
+                and hardware.
+              </h3>
+
               <p>
-                A modified Snake game exploring input, timing, display behavior,
-                scoring logic, and the constraints of embedded implementation.
+                A modified Snake game exploring input, timing,
+                display behavior, scoring logic, and the constraints
+                of embedded implementation.
               </p>
-              <div class="project-card__links">
-                <a href="https://www.youtube.com/watch?v=nDQH9OwrvsY">Watch demo <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/johnhagedorncs/Modified-Snake-Arcade-Game/tree/main">Source <span aria-hidden="true">↗</span></a>
+
+              <div class="project-links">
+
+                <a href="https://www.youtube.com/watch?v=nDQH9OwrvsY">
+                  Watch demo
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a href="https://github.com/johnhagedorncs/Modified-Snake-Arcade-Game/tree/main">
+                  Source
+                  <span aria-hidden="true">↗</span>
+                </a>
+
               </div>
+
             </div>
+
           </article>
-        </div>
-      </div>
-    </section>
 
-    <section id="about" class="about-section section-shell" data-section>
-      <div class="about-card reveal">
-        <div class="about-card__main">
-          <p class="eyebrow">About me</p>
-          <h2>I care about technical depth <em>and</em> the people using what I build.</h2>
-          <p class="about-card__lead">
-            I study computer engineering at UC Santa Barbara and work across the
-            boundary between software abstraction and physical systems.
-          </p>
-          <div class="about-card__copy">
-            <p>
-              My interests are broad by design: full-stack products, reliability
-              engineering, artificial intelligence, operating systems, computer
-              architecture, and embedded development. The recurring question is how to
-              turn a technically ambitious idea into something understandable, testable,
-              and useful.
-            </p>
-            <p>
-              I have led engineering interns, automated cross-platform deployments,
-              built AI-assisted workflows, evaluated model behavior, and developed
-              applications from prototype through deployment.
-            </p>
-          </div>
         </div>
 
-        <aside class="about-facts" aria-label="Profile facts">
-          <div>
-            <span>Institution</span>
-            <strong>UC Santa Barbara</strong>
-          </div>
-          <div>
-            <span>Discipline</span>
-            <strong>Computer Engineering</strong>
-          </div>
-          <div>
-            <span>Primary tools</span>
-            <strong>Python, C++, TypeScript, Swift</strong>
-          </div>
-          <div>
-            <span>Working across</span>
-            <strong>Software, AI, infrastructure, hardware</strong>
-          </div>
-          <div>
-            <span>Based in</span>
-            <strong>California</strong>
-          </div>
-        </aside>
       </div>
+
     </section>
 
-    <section id="contact" class="contact-section" data-section>
-      <div class="section-shell contact-card reveal">
-        <div class="contact-card__copy">
-          <p class="eyebrow">Let’s connect</p>
-          <h2>Have something interesting to build?</h2>
+
+    <!-- ABOUT -->
+    <section
+      id="about"
+      class="about-section"
+      data-section
+    >
+
+      <div class="page-shell">
+
+        <header class="section-intro reveal">
+
+          <div>
+            <p class="eyebrow">A little about me</p>
+            <h2>Curious by default.</h2>
+          </div>
+
+        </header>
+
+
+        <div class="about-layout">
+
+          <div class="about-copy reveal">
+
+            <p class="about-copy__lead">
+              I'm Stella Mullin, a computer engineering student at
+              UC Santa Barbara working where software meets
+              physical systems.
+            </p>
+
+            <p>
+              My interests are broad by design: full-stack products,
+              reliability engineering, artificial intelligence,
+              operating systems, computer architecture, and embedded
+              development.
+            </p>
+
+            <p>
+              The question connecting all of them is simple:
+              how do you take a technically ambitious idea and turn
+              it into something understandable, testable, and genuinely
+              useful?
+            </p>
+
+            <p>
+              I enjoy work where technical depth and human context
+              can't really be separated.
+            </p>
+
+          </div>
+
+
+          <aside class="about-card reveal">
+
+            <div class="about-card__item">
+              <span>Studying</span>
+              <strong>Computer Engineering</strong>
+            </div>
+
+            <div class="about-card__item">
+              <span>At</span>
+              <strong>UC Santa Barbara</strong>
+            </div>
+
+            <div class="about-card__item">
+              <span>Building with</span>
+              <strong>
+                Python, C++, TypeScript & Swift
+              </strong>
+            </div>
+
+            <div class="about-card__item">
+              <span>Interested in</span>
+              <strong>
+                Software, AI, infrastructure & hardware
+              </strong>
+            </div>
+
+            <div class="about-card__item">
+              <span>Based in</span>
+              <strong>California</strong>
+            </div>
+
+          </aside>
+
+        </div>
+
+
+        <blockquote class="about-quote reveal">
+
+          <span aria-hidden="true">“</span>
+
           <p>
-            I’m always happy to talk about engineering roles, research collaborations,
-            product work, or a difficult technical problem.
+            The best technology doesn't need to feel complicated
+            just because the problem behind it is.
           </p>
+
+        </blockquote>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section
+      id="contact"
+      class="contact-section"
+      data-section
+    >
+
+      <div class="page-shell contact-layout">
+
+        <div class="contact-heading reveal">
+
+          <p class="eyebrow">Let's talk</p>
+
+          <h2>
+            Have something interesting in mind?
+          </h2>
+
         </div>
 
-        <div class="contact-card__actions">
-          <a class="contact-email" href="mailto:johnhagedorncs@gmail.com">
-            johnhagedorncs@gmail.com <span aria-hidden="true">↗</span>
+
+        <div class="contact-content reveal">
+
+          <p>
+            I'm always happy to talk about engineering roles,
+            research, interesting products, or difficult technical
+            problems.
+          </p>
+
+          <a
+            class="contact-email"
+            href="mailto:johnhagedorncs@gmail.com"
+          >
+            johnhagedorncs@gmail.com
+            <span aria-hidden="true">↗</span>
           </a>
+
+
           <div class="contact-links">
-            <a href="https://www.linkedin.com/in/johnhagedorn-ucsb/">LinkedIn <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/johnhagedorncs">GitHub <span aria-hidden="true">↗</span></a>
-            <a href="https://johnhagedorn.app">Current site <span aria-hidden="true">↗</span></a>
+
+            <a href="https://www.linkedin.com/in/johnhagedorn-ucsb/">
+              LinkedIn
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a href="https://github.com/johnhagedorncs">
+              GitHub
+              <span aria-hidden="true">↗</span>
+            </a>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="section-shell site-footer__inner">
-      <p>© <span id="current-year">2026</span> John Hagedorn</p>
-      <p>Designed and built with care.</p>
-      <a href="#home">Back to top ↑</a>
+
+    <div class="page-shell site-footer__inner">
+
+      <p>
+        © <span id="current-year">2026</span>
+        Stella Mullin
+      </p>
+
+      <p>
+        Built with curiosity in California.
+      </p>
+
+      <a href="#home">
+        Back to top ↑
+      </a>
+
     </div>
+
   </footer>
+
 </body>
 </html>
