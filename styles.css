@@ -389,7 +389,8 @@ button {
 
   min-height: 44px;
 
-  padding: 0.72rem 1.1rem;
+  padding:
+    0.72rem 1.1rem;
 
   border-radius: 999px;
 
@@ -447,7 +448,8 @@ button {
     minmax(0, 1.05fr)
     minmax(320px, 0.65fr);
 
-  gap: clamp(2.5rem, 7vw, 6rem);
+  gap:
+    clamp(2.5rem, 7vw, 6rem);
 
   align-items: center;
 
@@ -527,7 +529,8 @@ button {
   padding:
     0.45rem 0.72rem;
 
-  border: 1px solid var(--line);
+  border:
+    1px solid var(--line);
 
   border-radius: 999px;
 
@@ -552,7 +555,7 @@ button {
 
 
 /* ============================================================
-   GRADUATION PHOTO
+   HERO PHOTO
    ============================================================ */
 
 .portrait-card {
@@ -958,8 +961,7 @@ button {
     translateY(-3px);
 
   box-shadow:
-    0 16px 35px
-    rgba(49, 55, 47, 0.07);
+    0 16px 35px rgba(49, 55, 47, 0.07);
 }
 
 
@@ -976,13 +978,6 @@ button {
 /* ============================================================
    PROJECT IMAGE AREAS
    ============================================================ */
-
-/*
-   IMPORTANT:
-
-   Every single project now has an image area
-   that is EXACTLY the same height.
-*/
 
 .project-visual,
 .project-card--feature .project-visual {
@@ -1011,11 +1006,7 @@ button {
 
 
 /*
-   THIS is what makes all five actual images
-   the SAME SIZE.
-
-   Every logo/poster sits inside a
-   190px by 120px frame.
+   All five project images use the exact same frame size.
 */
 
 .project-visual__image {
@@ -1044,24 +1035,12 @@ button {
 }
 
 
-/*
-   Since object-fit is cover,
-   the odd white space around the Isla Vista
-   Live logo will be cropped instead of making
-   that logo look tiny.
-*/
-
-.project-card:hover
-.project-visual__image {
+.project-card:hover .project-visual__image {
   transform:
     translate(-50%, -50%)
     scale(1.02);
 }
 
-
-/*
-   Same numbered circle on every card
-*/
 
 .project-visual__index {
   position: absolute;
@@ -1103,13 +1082,13 @@ button {
    ============================================================ */
 
 .project-card__content,
-.project-card--feature
-.project-card__content {
+.project-card--feature .project-card__content {
   display: flex;
 
   flex-direction: column;
 
-  padding: 1rem 1.1rem;
+  padding:
+    1rem 1.1rem;
 }
 
 
@@ -1217,6 +1196,101 @@ button {
 
 
 /* ============================================================
+   DAILY NEXUS — TWO ROLES
+   ============================================================ */
+
+.daily-nexus-roles {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 0;
+
+  margin-top: 1rem;
+
+  border-top:
+    1px solid var(--line);
+}
+
+
+.daily-nexus-role {
+  padding:
+    1.25rem 1.4rem 0.3rem 0;
+}
+
+
+.daily-nexus-role + .daily-nexus-role {
+  padding-right: 0;
+  padding-left: 1.4rem;
+
+  border-left:
+    1px solid var(--line);
+}
+
+
+.daily-nexus-role__label,
+.batcave-links__title {
+  margin:
+    0 0 0.4rem;
+
+  color: var(--peach-deep);
+
+  font-size: 0.56rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+.daily-nexus-role h3 {
+  margin:
+    0 0 0.6rem;
+
+  font-family: var(--display);
+
+  font-size:
+    clamp(1.55rem, 2.2vw, 2rem);
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+.daily-nexus-role > p:not(.daily-nexus-role__label) {
+  margin: 0;
+
+  color: var(--ink-soft);
+
+  font-size: 0.78rem;
+
+  line-height: 1.5;
+}
+
+
+.daily-nexus-role .project-card__links {
+  margin-top: 0.8rem;
+}
+
+
+.batcave-links {
+  margin-top: 1rem;
+}
+
+
+.batcave-links .project-card__links {
+  gap:
+    0.55rem 0.9rem;
+
+  margin-top: 0;
+}
+
+
+/* ============================================================
    ABOUT
    ============================================================ */
 
@@ -1248,9 +1322,6 @@ button {
 .about-card__main h2 {
   max-width: 700px;
 
-  margin:
-    0.65rem 0 1.1rem;
-
   font-family: var(--display);
 
   font-size:
@@ -1268,6 +1339,64 @@ button {
   color: var(--peach-deep);
 
   font-weight: 400;
+}
+
+
+/* ============================================================
+   ABOUT PHOTO + HEADLINE
+   ============================================================ */
+
+.about-title-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.4rem;
+
+  margin:
+    0.65rem 0 1.1rem;
+}
+
+
+.about-title-row h2 {
+  margin: 0;
+
+  flex: 1;
+}
+
+
+.about-photo {
+  flex:
+    0 0 auto;
+
+  width: 105px;
+  height: 125px;
+
+  overflow: hidden;
+
+  border:
+    7px solid rgba(255, 253, 250, 0.75);
+
+  border-radius: 16px;
+
+  background: var(--white);
+
+  box-shadow:
+    0 10px 24px rgba(36, 49, 45, 0.08);
+
+  transform:
+    rotate(-2deg);
+}
+
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position:
+    center 30%;
 }
 
 
@@ -1363,7 +1492,7 @@ button {
 
 
 /* ============================================================
-   SMALL LET'S CONNECT BOX
+   CONTACT
    ============================================================ */
 
 .contact-section {
@@ -1545,8 +1674,7 @@ button {
   }
 
 
-  .site-nav
-  li:last-child a {
+  .site-nav li:last-child a {
     border-bottom: 0;
   }
 
@@ -1586,8 +1714,7 @@ button {
   }
 
 
-  .menu-toggle
-  span:not(.sr-only) {
+  .menu-toggle span:not(.sr-only) {
     display: block;
 
     width: 16px;
@@ -1596,6 +1723,25 @@ button {
     border-radius: 2px;
 
     background: var(--ink);
+
+    transition:
+      transform 180ms ease;
+  }
+
+
+  .menu-toggle[aria-expanded="true"]
+  span:nth-of-type(2) {
+    transform:
+      translateY(3.25px)
+      rotate(45deg);
+  }
+
+
+  .menu-toggle[aria-expanded="true"]
+  span:nth-of-type(3) {
+    transform:
+      translateY(-3.25px)
+      rotate(-45deg);
   }
 
 
@@ -1720,8 +1866,7 @@ button {
   }
 
 
-  .portrait-card__caption
-  span:last-child {
+  .portrait-card__caption span:last-child {
     text-align: left;
   }
 
@@ -1809,21 +1954,12 @@ button {
   }
 
 
-  /*
-     Same small photo area on mobile.
-  */
-
   .project-visual,
-  .project-card--feature
-  .project-visual {
+  .project-card--feature .project-visual {
     height: 145px;
     min-height: 145px;
   }
 
-
-  /*
-     Every image remains the same exact size.
-  */
 
   .project-visual__image {
     width: 165px;
@@ -1835,8 +1971,7 @@ button {
 
 
   .project-card__content,
-  .project-card--feature
-  .project-card__content {
+  .project-card--feature .project-card__content {
     padding:
       0.95rem;
   }
@@ -1858,6 +1993,30 @@ button {
   }
 
 
+  /* Daily Nexus roles stack */
+
+  .daily-nexus-roles {
+    grid-template-columns: 1fr;
+  }
+
+
+  .daily-nexus-role {
+    padding:
+      1.1rem 0;
+  }
+
+
+  .daily-nexus-role + .daily-nexus-role {
+    padding:
+      1.1rem 0 0;
+
+    border-top:
+      1px solid var(--line);
+
+    border-left: 0;
+  }
+
+
   /* About */
 
   .about-section {
@@ -1875,7 +2034,24 @@ button {
 
   .about-card__main h2 {
     font-size:
-      clamp(2.7rem, 13vw, 4rem);
+      clamp(2.5rem, 11vw, 3.8rem);
+  }
+
+
+  .about-title-row {
+    align-items: flex-start;
+
+    gap: 1rem;
+  }
+
+
+  .about-photo {
+    width: 78px;
+    height: 96px;
+
+    border-width: 5px;
+
+    border-radius: 13px;
   }
 
 
@@ -1920,8 +2096,7 @@ button {
   }
 
 
-  .site-footer__inner
-  p:nth-child(2) {
+  .site-footer__inner p:nth-child(2) {
     text-align: left;
   }
 
